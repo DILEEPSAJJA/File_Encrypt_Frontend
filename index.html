@@ -121,7 +121,7 @@
       resultText.textContent = "🔄 Processing...";
       resultText.className = "text-blue-500 text-sm text-center";
 
-      fetch(`https://file-encrypt-backend.vercel.app/${endpoint}`, {
+      fetch(`https://file-encrypt-backend.vercel.app/api/${endpoint}`, {
         method: "POST",
         body: formData,
       })
